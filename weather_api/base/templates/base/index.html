@@ -10,15 +10,20 @@
     <div>
         <h1>What is the weather like</h1>
         <section id="form">
-            <input name="city" id="city" type="text" >
+        <form method="post">
+            {% csrf_token %}
+            {{form.name}}
             <input type="submit" value="Add City">
+        </form>
         </section>
+        {% for weather in weather_data %}
         <section id="display">
             <img src="http://openweathermap.org/img/w/{{ weather.icon }}.png">
             <h1>{{weather.city}}</h1>
             <h3>Temperature :{{weather.temperature}} </h3>
             <h3>Weather: {{weather.description}} </h3>
         </section>
+        {% endfor %}
     </div>
 </body>
 </html>
