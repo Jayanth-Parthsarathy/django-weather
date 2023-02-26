@@ -57,3 +57,10 @@ body {
 .city--weather{
     font-size: 13px;
 }
+
+footer{
+    height: 20px;
+    color: white;
+    padding: 10px;
+    background-color: #454545;
+}
