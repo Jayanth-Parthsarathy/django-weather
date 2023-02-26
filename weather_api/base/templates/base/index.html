@@ -14,9 +14,10 @@
             <input type="submit" value="Add City">
         </section>
         <section id="display">
-            <h1>{{weather.name}}</h1>
-            <h3>Temperature :{{weather.main.temp}} </h3>
-            <h3>Weather: cloudy, etc</h3>
+            <img src="http://openweathermap.org/img/w/{{ weather.icon }}.png">
+            <h1>{{weather.city}}</h1>
+            <h3>Temperature :{{weather.temperature}} </h3>
+            <h3>Weather: {{weather.description}} </h3>
         </section>
     </div>
 </body>
