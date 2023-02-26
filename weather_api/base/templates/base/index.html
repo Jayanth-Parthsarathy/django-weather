@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body>
+    <div>
+        <h1>What is the weather like</h1>
+        <section id="form">
+            <input name="city" id="city" type="text" >
+            <input type="submit" value="Add City">
+        </section>
+        <section id="display">
+            <h1>{{weather.name}}</h1>
+            <h3>Temperature :{{weather.main.temp}} </h3>
+            <h3>Weather: cloudy, etc</h3>
+        </section>
+    </div>
+</body>
+</html>
